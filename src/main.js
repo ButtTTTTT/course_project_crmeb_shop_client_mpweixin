@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import './uni.promisify.adaptor'
-
+import  '@/utils/facade.js'
 Vue.config.productionTip = false
 
 App.mpType = 'app'

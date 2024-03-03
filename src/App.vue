@@ -8,6 +8,18 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		methods: {
+			_initTaBar(data) {
+				console.log(data);
+				data.menus.forEach((it,idx) =>{
+					index:idx,
+					pagePath: it.url,
+					iconPath: it.pic,
+					selectedIconPath: it.pic,
+					text: it.name
+				})
+			}
 		}
 	}
 </script>
